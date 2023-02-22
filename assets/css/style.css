@@ -6,13 +6,14 @@
     --tertiary-color: #FFFBF5;
 
     --global-font: 'Montserrat', sans-serif;
+    --background: url("../images/light_background.jpg");
 }
 
 
 body {
-    background-image: url("../images/light_background.jpg");
+    background-image: var(--background);
     background-repeat: no-repeat;
-    background-size: 100% 1000px;
+    background-size: 100% 100%;
     position: relative;
     min-height: 99vh;
     margin: 0;
@@ -49,6 +50,16 @@ main {
     animation: caret infinite;
     animation-duration: 1s;
     animation-timing-function: steps(1, end);
+}
+
+@keyframes text3 {
+    0%, 50%, 100% {
+        width: 0;
+    }
+
+    60%, 90% {
+        width: 17em;
+    }
 }
 
 @keyframes text2 {
@@ -124,109 +135,7 @@ p {
 .math-image {
     position: fixed;
     mix-blend-mode: screen;
-}
-
-.first-polygon {
-    transform: translate(-43%, -11%);
-}
-
-.second-polygon {
-    transform: translate(252%, 1%) rotate(8deg);
-    width: 18rem;
-}
-
-.third-polygon {
-    transform: translate(652%, 106%) rotate(-7deg);
-    width: 10rem;
-}
-
-.fourth-polygon {
-    transform: translate(400%, -36%) rotate(-27deg);
-    width: 20rem;
-}
-
-.fifth-polygon {
-    transform: translate(546%, 19%) rotate(167deg);
-    width: 20rem;
-}
-
-.sixth-polygon {
-    transform: translate(836%, 35%) rotate(8deg);
-    width: 18rem;
-}
-
-.first-cube {
-    transform: translate(335%, 300%);
-}
-
-.second-cube {
-    transform: translate(368%, -42%);
-    width: 17rem;
-}
-
-.third-cube {
-    transform: translate(180%, 155%) rotate(8deg);
-    width: 7rem;
-}
-
-.fourth-cube {
-    transform: translate(124%, 264%) rotate(8deg);
-    width: 7rem;
-}
-
-.fifth-cube {
-    transform: translate(1436%, 185%) rotate(33deg);
-}
-
-.sixth-cube {
-    transform: translate(584%, -73%) rotate(8deg);
-    width: 7rem;
-}
-
-.seventh-cube {
-    transform: translate(685%, 58%) rotate(83deg);
-    width: 14rem;
-}
-
-.eighth-cube {
-    transform: translate(2000%, 3%);
-}
-
-.ninth-cube {
-    transform: translate(1687%, -29%);
-    width: 7rem;
-}
-
-.tenth-cube {
-    transform: translate(1585%, -78%) rotate(8deg);
-    width: 7rem;
-}
-
-.eleventh-cube {
-    transform: translate(2708%, 301%) rotate(-25deg);
-}
-
-.first-cone {
-    transform: translate(52%, -55%);
-}
-
-.second-cone {
-    transform: translate(113%, -8%) rotate(-8deg);
-    width: 20rem;
-}
-
-.third-cone {
-    transform: translate(748%, 116%) rotate(-96deg);
-    width: 11rem;
-}
-
-.fourth-cone {
-    transform: translate(623%, -8%) rotate(-50deg);
-    width: 20rem;
-}
-
-.fifth-cone {
-    transform: translate(837%, -72%);
+    width: 100%;
 }
 
 .menu {
