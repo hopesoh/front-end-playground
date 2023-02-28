@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     </head>
-    <body>
+    <body class="container" data-theme="default">
         <header>
         </header>
         <main>
@@ -27,6 +27,12 @@
                         <span class="second-text">Software Developer</span>
                     </h3>
                 </div>
+                <div class="controller-row">
+                    <label class="switch">
+                        <input id="toggler" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
                 <div class="options">
                     <a class="social" href="https://github.com/hopesoh" target="_blank">GITHUB</a>
                     <a class="social" href="https://www.instagram.com/hopesoh/" target="_blank">INSTAGRAM</a>
@@ -36,7 +42,7 @@
             </section>
 
             <section class="sub-footer">
-                <img src="assets/images/footer.png">
+                <img id="imageId" src="assets/images/footer.png">
             </section>
         </main>
 
@@ -45,3 +51,5 @@
         </footer>
     </body>
 </html>
+
+<script src="assets/js/switch.js"></script>
