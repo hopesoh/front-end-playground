@@ -1,3 +1,9 @@
+V2
+- https://www.wikihow.com/Make-a-Website-Like-the-90s
+- 
+
+
+V1
 - links uteis:
 https://dribbble.com/search/portfolio
 
