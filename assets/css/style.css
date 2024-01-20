@@ -90,6 +90,19 @@ body a {
     padding-top:10px;
     padding-left:10px;
 }
+.coffee {
+    justify-content: center;
+    display: flex;
+}
+.pix {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.post__pix {
+    display: block;
+    margin: 2em auto;
+}
 .boxwrap img {
     width:130px;
     display:block;
