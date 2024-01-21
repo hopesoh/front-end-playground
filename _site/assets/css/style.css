@@ -85,7 +85,7 @@ body a:hover {
 }
 
 .content--left__box--wrap {
-    padding-left: 30px;
+    padding-left: 35px;
     margin-top: 15px;
     padding-bottom: 5px;
 }
@@ -93,6 +93,11 @@ body a:hover {
 .content--left__box--wrap img {
     width: 130px;
     display: block;
+}
+
+.content--left__box--wrap__image {
+    height: 20px;
+    width: 150px;
 }
 
 .content--right {
