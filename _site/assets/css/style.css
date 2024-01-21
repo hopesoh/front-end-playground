@@ -47,8 +47,64 @@ body a:hover {
 .container {
     max-width:700px;
     margin: 10em auto;
-    background-color: var(--backgroud-color);
+    background-color: #C0C0C0;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    border-width: 1px;
+    border-style: solid;
     padding: 2em;
+}
+
+div.bar{
+    height: 24px;
+    width: calc(100% + 40px);
+    background: #000080;
+    color: #FFF;
+    margin-top: -2em;
+    margin-left: -2em;
+    margin-bottom: 1em;
+    padding-top: 0.3em;
+}
+
+img.bar{
+    float: left;
+    margin-left: 0.5em;
+    height: 18px;
+    width: 18px;
+}
+
+p.bar{
+    margin: 3px 0 0 4px;
+    float: left;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+}
+
+.bar button:active {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #efefef;
+    border-bottom: 2px solid #efefef
+}
+
+.bar button {
+    font-family: Arial,sans-serif;
+    cursor: pointer;
+    margin: 2px 2px 2px 0;
+    float: right;
+    width: 16px;
+    height: 16px;
+    background: #C0C0C0;
+    border-width: 1px;
+    border-left: 2px solid #ededed;
+    border-top: 2px solid #ededed;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+    appearance: none;
+    font-weight: 700;
+    letter-spacing: .05em;
+    padding: 0;
+    font-size: 9px;
+    text-align: center;
 }
 
 .header {
