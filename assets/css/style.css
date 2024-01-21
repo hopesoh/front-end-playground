@@ -46,12 +46,16 @@ body a:hover {
 
 .container {
     max-width:700px;
-    margin: 10em auto;
     background-color: #C0C0C0;
     border-color: #FFFFFF #808080 #808080 #FFFFFF;
     border-width: 1px;
     border-style: solid;
     padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 div.bar{
@@ -191,6 +195,7 @@ p.bar{
     text-align:center;
 }
 
+/*
 @media only screen and (max-width: 730px) {
     .content {
         flex-wrap: wrap;
@@ -210,4 +215,4 @@ p.bar{
         justify-content: center;
         margin-top: 20px;
     }
-}
+}/*
