@@ -133,6 +133,7 @@ p.bar{
 
 .content--left {
     width:200px;
+    height:642px;
     display:flex;
     flex-wrap:wrap;
 }
@@ -187,32 +188,9 @@ p.bar{
 }
 
 .content--right__post-footer {
-    padding-top: 20px;
-    padding-left: 30px;
+    padding-bottom: 10px;
 }
 
 .footer {
     text-align:center;
 }
-
-/*
-@media only screen and (max-width: 730px) {
-    .content {
-        flex-wrap: wrap;
-    }
-
-    .content--right {
-        width: 100%;
-        order: 1;
-    }
-
-    .content--left {
-        width: 100%;
-        order: 2;
-        display: flex;
-        flex-wrap: wrap;
-        align-self: center;
-        justify-content: center;
-        margin-top: 20px;
-    }
-}/*
