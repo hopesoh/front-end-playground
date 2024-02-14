@@ -29,7 +29,7 @@
 Latest: '24 version
 ![screen.gif](assets%2Fimages%2Fgif%2Fscreen.gif)
 
-Code playground to learn and practice about frontend and design, while I continue searching for the perfect personal website.
+Code playground to learn and practice about frontend and design, while I keep searching for the perfect personal website.
 
 
 ### Built With
