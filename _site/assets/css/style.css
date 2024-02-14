@@ -1,0 +1,196 @@
+:root {
+    --font-family: "Verdana", sans-serif;
+    --font-size: x-small;
+    --sidebar-border: 1px solid #FFFFFF;
+    --link-color: blue;
+    --visited-link-color: rebeccapurple;
+    --hover-link-color: royalblue;
+    --bg-color: white;
+    --text-color: black;
+    --sidebar-bg: transparent;
+    --content-bg: transparent;
+    --content-padding: 0;
+    --background-image: url("../images/background/glitter.gif"), url("../images/background/greengrid.jpg");
+    --backgroud-color: whitesmoke;
+}
+
+* {
+    cursor: url(https://cur.cursors-4u.net/anime/ani-9/ani878.ani), url(https://cur.cursors-4u.net/anime/ani-9/ani878.png), auto !important;
+}
+
+.head__image {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    background-image: var(--background-image);
+}
+
+body a {
+    color: var(--link-color);
+}
+
+body a:visited {
+    color: var(--visited-link-color);
+}
+
+body a:hover {
+    color: var(--hover-link-color);
+}
+
+.container {
+    max-width:700px;
+    background-color: #C0C0C0;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    border-width: 1px;
+    border-style: solid;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+div.bar{
+    height: 24px;
+    width: calc(100% + 40px);
+    background: #000080;
+    color: #FFF;
+    margin-top: -2em;
+    margin-left: -2em;
+    margin-bottom: 1em;
+    padding-top: 0.3em;
+}
+
+img.bar{
+    float: left;
+    margin-left: 0.5em;
+    height: 18px;
+    width: 18px;
+    margin-top: 2px;
+}
+
+p.bar{
+    margin: 4px 0 0 4px;
+    float: left;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+}
+
+.bar button:active {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #efefef;
+    border-bottom: 2px solid #efefef
+}
+
+.bar button {
+    font-family: Arial,sans-serif;
+    cursor: pointer;
+    margin: 2px 2px 2px 0;
+    float: right;
+    width: 16px;
+    height: 16px;
+    background: #C0C0C0;
+    border-width: 1px;
+    border-left: 2px solid #ededed;
+    border-top: 2px solid #ededed;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+    appearance: none;
+    font-weight: 700;
+    letter-spacing: .05em;
+    padding: 0;
+    font-size: 9px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-content: space-between;
+    padding-bottom: 10px;
+}
+
+.header__title {
+    width: 60%;
+}
+
+.header__visitors {
+    text-align: right;
+    width: 40%;
+}
+
+.content {
+    display:flex;
+}
+
+.content--left {
+    width:200px;
+    height:642px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.content--left__box {
+    width: 200px;
+    border: var(--sidebar-border);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    background-color: var(--sidebar-bg);
+}
+
+.content--left__box--wrap {
+    padding-left: 35px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+
+.content--left__box--wrap img {
+    width: 130px;
+    display: block;
+}
+
+.content--left__box--wrap__image {
+    height: 20px;
+    width: 150px;
+}
+
+.content--right {
+    margin-left: 10px;
+    background-color: var(--content-bg);
+    padding: var(--content-padding);
+}
+
+.content--right__post .content--right__post__title {
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:10px;
+    padding-left:10px;
+}
+
+.content--right__post {
+    margin-bottom:10px;
+}
+
+.content--right__post__entry {
+    padding-left:10px;
+}
+
+.content--right__post__entry__social {
+    text-decoration: none;
+}
+
+.content--right__post-footer {
+    padding-bottom: 10px;
+}
+
+.footer {
+    text-align:center;
+}
