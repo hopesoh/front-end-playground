@@ -60,7 +60,7 @@ Configuration file: none
 
 saribeiro - [@ar__sonia](https://twitter.com/ar__sonia) - saribeiro.me@gmail.com
 
-Project Link: [https://github.com/hopesoh/hopesoh.github.io](https://github.com/hopesoh/hopesoh.github.io)
+[Project Link](https://hopesoh.github.io/)
 
 ## Acknowledgments
 
