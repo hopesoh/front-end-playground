@@ -55,7 +55,7 @@ Configuration file: none
 - [X] Design
 - [X] Cursor effects
 - [X] Guestbook
-- [X] Win95 look
+- [X] Win95 theme
 
 ## Contact
 
@@ -74,5 +74,5 @@ saribeiro - [@ar__sonia](https://twitter.com/ar__sonia) - saribeiro.me@gmail.com
 * [Cool text](https://cooltext.com/)
 * [Free website hit counter](https://www.free-website-hit-counter.com/)
 * [mf2fm](https://www.mf2fm.com/rv/) for cursor and text effects
-* [Wikihow](https://www.wikihow.com/Make-a-Website-Like-the-90s)
+* [Wikihow](https://www.wikihow.com/Make-a-Website-Like-the-90s) for general ideas
 * [1j01](https://github.com/1j01/98?tab=readme-ov-file) for great win95 ideas
