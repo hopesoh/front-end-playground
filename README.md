@@ -12,6 +12,7 @@ Code playground to learn and practice about frontend and design, while I keep se
 * CSS
 * JS
 * Jekyll
+* Ruby
 * Github Pages
 * A lot of patience
 
