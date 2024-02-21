@@ -1,40 +1,9 @@
-<a name="readme-top"></a>
-
-
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
-
 ## About The Project
 
 Latest: '24 version
 ![screen.gif](assets%2Fimages%2Fgif%2Fscreen.gif)
 
-Code playground to learn and practice about frontend and design, while I continue searching for the perfect personal website.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+Code playground to learn and practice about frontend and design, while I keep searching for the perfect personal website.
 
 
 ### Built With
@@ -43,25 +12,20 @@ Code playground to learn and practice about frontend and design, while I continu
 * CSS
 * JS
 * Jekyll
+* Ruby
 * Github Pages
+* A lot of patience
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* [Jekyll](https://jekyllrb.com/docs/installation/)
+
+Github [highly](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll#prerequisites) recommends to use Bundler to install and execute Jekyll.
+
+1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+2. Install [Bundler](https://bundler.io/)
 
 ### Installation
 
@@ -69,44 +33,46 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/hopesoh/hopesoh.github.io.git
    ```
-2. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
-3. Install [Bundler](https://bundler.io/)
-4. Navigate to the publishing source for the site.
-5. Run `bundle install`
-6. Run `bundle exec jekyll serve`
+2. Navigate to the publishing source
+3. Run `bundle install`
+4. Run `bundle exec jekyll serve`
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```bash
+> bundle exec jekyll serve
+Configuration file: none
+            Source: /path/to/hopesoh.github.io
+       Destination: /path/to/hopesoh.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.055 seconds.
+ Auto-regeneration: enabled for '/path/to/hopesoh.github.io'
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
+```
 
-
-<!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [X] Design
+- [X] Cursor effects
+- [X] Guestbook
+- [X] Win95 theme
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+saribeiro - [@ar__sonia](https://twitter.com/ar__sonia) - saribeiro.me@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+[Project Link](https://hopesoh.github.io/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
+* [Testar o site do GitHub Pages localmente com o Jekyll](https://docs.github.com/pt/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
+* [Neocities](https://neocities.org/browse)
+* [sadgrl](https://sadgrl.online/webmastery/layouts/) for amazing backgrounds
+* [99 gif shop](https://99gifshop.neocities.org/) for cute gifs
+* [Wayback Machine](https://archive.org/web) for some nostalgia
+* [Cool text](https://cooltext.com/)
+* [Free website hit counter](https://www.free-website-hit-counter.com/)
+* [mf2fm](https://www.mf2fm.com/rv/) for cursor and text effects
+* [Wikihow](https://www.wikihow.com/Make-a-Website-Like-the-90s) for general ideas
+* [1j01](https://github.com/1j01/98?tab=readme-ov-file) for great win95 ideas
