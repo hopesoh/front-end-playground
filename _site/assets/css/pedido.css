@@ -1,0 +1,43 @@
+.--love {
+    justify-content: center;
+    display: flex;
+}
+
+.content--right__post__question h1 {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content--right__post__buttons {
+    margin: 4em 0 3em 25em;
+}
+
+.content--right__post__button:active {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #efefef;
+    border-bottom: 2px solid #efefef
+}
+
+.content--right__post__button {
+    font-family: Arial,sans-serif;
+    cursor: pointer;
+    margin: 2px 20px 2px 0;
+    width: 85px;
+    height: 26px;
+    background: #C0C0C0;
+    border-width: 1px;
+    border-left: 2px solid #ededed;
+    border-top: 2px solid #ededed;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+    appearance: none;
+    letter-spacing: .05em;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+#no{
+    position: absolute;
+}
