@@ -1,5 +1,5 @@
 // <![CDATA[
-var news=Array("Hi! I'm Sonia", "Welcome to my website", "I'm mathematician and software developer", "Where can you find me?");
+var news=Array("Hi! I'm Sonia", "Welcome to my website", "I'm a mathematician and software developer", "That's where you'll find me:");
 var cursor="_"; // set cursor
 var delay=12; // seconds between each news item
 
