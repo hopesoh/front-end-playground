@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Source+Code+Pro:ital@0;1&display=swap');
+
 :root {
     --font-family: "Verdana", sans-serif;
     --font-size: x-small;
@@ -5,12 +7,12 @@
     --link-color: blue;
     --visited-link-color: rebeccapurple;
     --hover-link-color: royalblue;
-    --bg-color: white;
+    --bg-color: #008080;
     --text-color: black;
     --sidebar-bg: transparent;
     --content-bg: transparent;
     --content-padding: 0;
-    --background-image: url("../images/background/glitter.gif"), url("../images/background/greengrid.jpg");
+    --background-image: none;
     --backgroud-color: whitesmoke;
 }
 
@@ -173,6 +175,7 @@ p.bar{
     font-weight:bold;
     margin-bottom:10px;
     padding-left:10px;
+    font-family: "Source Code Pro", serif;
 }
 
 .content--right__post {

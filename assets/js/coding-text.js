@@ -1,7 +1,7 @@
 // <![CDATA[
 var news=Array("Hi! I'm Sonia", "Welcome to my website", "I'm a mathematician and software developer", "That's where you'll find me:");
 var cursor="_"; // set cursor
-var delay=12; // seconds between each news item
+var delay=9; // seconds between each news item
 
 /***************************\
  * News Ticker Text Effect   *
