@@ -298,6 +298,8 @@ docker-compose up --build
    
 **Version**: '25 edition 
 
+**Availability**: [saribeiro.dev](https://www.saribeiro.dev/)
+
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -344,10 +346,10 @@ The frontend will be available at `http://localhost:5173` and the backend at `ht
 ### 🏠 Home Page
 The landing page with all the retro vibes and personal touches.
 
-### 💿 Wishlist (`/wishlist`)
+### 💿 Wishlist
 A curated collection of vinyl records and CDs I'm dreaming about. Each item has details like artist, album, and current status.
 
-### 🔐 Admin Panel (`/admin`)
+### 🔐 Admin Panel 
 - **Dashboard**: Overview of all wishlist items
 - **Create Items**: Add new records to the wishlist
 - **Edit Items**: Update existing items with new information
