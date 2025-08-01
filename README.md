@@ -439,9 +439,6 @@ This project wouldn't be possible without these amazing resources and inspiratio
 - **[1j01](https://github.com/1j01/98?tab=readme-ov-file)** - Great Windows 95 ideas
 - **[cursor](https://cursor.com/?from=home)**, it ONLY helped me with documentation, 'cause I'm lazy.
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
