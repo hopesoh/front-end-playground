@@ -1,6 +1,4 @@
-# 🎀 Sonia's Personal Website - A 90s Nostalgia Trip
-
-![screen.gif](assets%2Fimages%2Fgif%2Fscreen.gif)
+# 🎀 Personal Website
 
 > *"Under construction" vibes with a sprinkle of love and a whole lot of personality* ✨
 
@@ -9,32 +7,21 @@ Welcome to my digital playground! This is where I experiment with frontend devel
 ## 🌟 What's This All About?
 
 This is my personal website that serves multiple purposes:
+- **Special Proposal Page**: A romantic surprise for my boyfriend (shh, don't tell!)
+- **Music Wishlist**: A curated collection of vinyl records and CDs I'm dreaming about
+- **Admin Panel**: For managing the wishlist items (because someone needs to keep track of all those records!)
 - **Personal Portfolio**: Showcasing my work and interests
-- **Love Story**: A special page for my boyfriend (yes, it's as cute as it sounds!)
 - **Nostalgia Trip**: A celebration of 90s web aesthetics
 - **Learning Lab**: Where I practice frontend skills and experiment with design
 
-## 🎯 Main Features
+## Versions
 
-### 🏠 Homepage (`index.html`)
-- **Personal Introduction**: Hi, I'm Sonia! 👋
-- **Social Links**: GitHub, LinkedIn, and email with adorable GIFs
-- **90s Aesthetic**: Blinking GIFs, retro design, and that authentic "under construction" feel
-- **Visitor Counter**: Because who doesn't love seeing how many people visited your site?
+<details>
+<summary>V1 - Github Pages</summary>
+   
+**Version**: '22 edition 
 
-### 💕 Love Story (`pedido.html`)
-- **Special Proposal Page**: A cute interactive page for my boyfriend
-- **Animated Buttons**: Yes/No buttons with fun animations
-- **Personal Touch**: Because love deserves its own webpage!
-
-### 🎂 Birthday Surprise (`unica-resposta-correta.html`)
-- **Birthday Celebration**: A special page for Vinícius's birthday
-- **Confetti Animation**: JavaScript-powered celebration effects
-- **Personalized Message**: Because birthdays are special!
-
-### 🚧 Under Construction (`construction.html`)
-- **Classic 90s Vibe**: Because sometimes you need that "work in progress" feel
-- **Animated Elements**: Construction GIFs and retro styling
+![screen.gif](assets%2Fimages%2Fgif%2Fscreen.gif)
 
 ## 🛠️ Tech Stack
 
@@ -151,14 +138,279 @@ This site is deployed on **GitHub Pages** and automatically builds from the main
 - [x] Love story page
 - [x] Birthday celebration page
 - [x] Social media integration
+ 
+</details>
 
-### 🚧 Future Ideas
-- [ ] Blog section
-- [ ] Portfolio showcase
-- [ ] More interactive elements
-- [ ] Dark mode toggle
-- [ ] Guestbook improvements
-- [ ] More 90s nostalgia features
+
+<details>
+<summary>V2 - Java + Spring + JSP</summary>
+   
+**Version**: '24 edition 
+
+## 🛠️ Tech Stack
+
+- **Backend**: Spring Boot 3.4.3 with Java 21
+- **Database**: MySQL with Flyway migrations
+- **Security**: Spring Security with JWT authentication
+- **Frontend**: JSP pages with some retro CSS styling
+- **Containerization**: Docker & Docker Compose
+- **Deployment**: Railway (because it's awesome!)
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Java 21
+- Docker & Docker Compose
+- Maven (optional, Docker handles it)
+
+### Running Locally
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd site
+   ```
+
+2. **Start with Docker Compose**
+   ```bash
+   docker-compose up --build
+   ```
+
+3. **Access the application**
+   - Main site: http://localhost:8080
+   - Login: http://localhost:8080/login
+   - Wishlist: http://localhost:8080/wishlist
+   - Admin: http://localhost:8080/admin
+
+### Database Access
+```bash
+# Connect to MySQL container
+docker exec -it mysql mysql
+
+# Or access via port 3307
+mysql -h localhost -P 3307 -u root
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── main/
+│   ├── java/com/saribeiro/website/
+│   │   ├── admin/          # Admin panel controllers
+│   │   ├── config/         # Security & JWT configuration
+│   │   ├── dashboard/      # Home & login controllers
+│   │   ├── proposal/       # Special romantic pages 💕
+│   │   ├── user/          # User management
+│   │   ├── wishlist/      # Vinyl wishlist functionality
+│   │   └── sanitizers/    # Utility classes
+│   ├── resources/
+│   │   ├── static/        # CSS, JS, images (lots of retro GIFs!)
+│   │   ├── webapp/        # JSP views
+│   │   └── db/migration/  # Flyway migrations
+│   └── test/              # Test files
+```
+
+## 🎯 Main Features
+
+### 💿 Vinyl Wishlist
+- Browse cds by status (wanted, owned, etc.)
+- Filter and pagination
+- Beautiful retro styling
+
+### 🔐 Admin Panel
+- Secure area to manage wishlist items
+- Add, edit, and delete vinyl records
+- User authentication required
+
+### 👤 Authentication
+- JWT-based login system
+- Secure user management
+- Role-based access control
+
+## 🐳 Docker Configuration
+
+The project uses a multi-stage Docker build for optimization:
+
+```dockerfile
+# Build stage
+FROM maven:3.9.4-eclipse-temurin-21 as builder
+# ... build process
+
+# Runtime stage
+FROM eclipse-temurin:21-jre-alpine
+# ... runtime configuration
+```
+
+### Environment Variables
+- `MYSQL_HOST`: Database host (default: localhost)
+- `MYSQL_DATABASE`: Database name (default: wishlist)
+- `JWT_SECRET`: Secret for JWT tokens
+- `JWT_EXPIRATION_TIME`: Token expiration time
+
+## 🚀 Deployment on Railway
+
+This project is configured for Railway deployment:
+
+1. **Connect your repository** to Railway
+2. **Set environment variables**:
+   - `MYSQL_HOST`: Your Railway MySQL host
+   - `MYSQL_DATABASE`: Database name
+   - `MYSQL_USERNAME`: Database username
+   - `MYSQL_PASSWORD`: Database password
+   - `JWT_SECRET`: Your JWT secret
+3. **Deploy!** Railway will automatically build and deploy your app
+
+## 🎨 Styling & Assets
+
+The project includes a collection of retro assets:
+- **90s GIFs**: From Alanis Morissette to Deftones vibes
+- **Retro backgrounds**: Green grids, glitter effects
+- **Custom icons**: Question marks, speakers, search icons
+- **Social media icons**: GitHub, LinkedIn, Instagram, Email
+
+## 🔧 Development
+
+### Running Tests
+```bash
+mvn test
+```
+
+### Database Migrations
+```bash
+# Using the CLI tool
+./website-cli <migrationMethod> <migrationName>
+```
+
+### Local Development
+```bash
+# Run with Maven
+mvn spring-boot:run
+
+# Or with Docker
+docker-compose up --build
+```
+
+</details>
+
+<details open>
+<summary>V3 - Serverless front + back</summary>
+   
+**Version**: '25 edition 
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React 19** with Vite for lightning-fast development
+- **React Router** for smooth navigation
+- **Framer Motion** for beautiful animations
+- **Axios** for API communication
+- **Anime.js** for those extra cool effects
+- **Vercel Analytics** to see who's visiting
+
+### Backend
+- **Spring Boot 3.4.4** with Java 21
+- **Spring Security** with JWT authentication
+- **Spring Data JPA** for database operations
+- **MySQL** as the database (serverless for cost efficiency)
+- **Flyway** for database migrations
+- **Bucket4j** for rate limiting
+- **Railway** for deployment
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Java 21
+- Node.js 18+
+- MySQL database
+
+### Backend Setup
+```bash
+cd backend
+./mvnw spring-boot:run
+```
+
+### Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend will be available at `http://localhost:5173` and the backend at `http://localhost:8080`.
+
+## 📱 Main Features
+
+### 🏠 Home Page
+The landing page with all the retro vibes and personal touches.
+
+### 💿 Wishlist (`/wishlist`)
+A curated collection of vinyl records and CDs I'm dreaming about. Each item has details like artist, album, and current status.
+
+### 🔐 Admin Panel (`/admin`)
+- **Dashboard**: Overview of all wishlist items
+- **Create Items**: Add new records to the wishlist
+- **Edit Items**: Update existing items with new information
+
+### 🔑 Authentication
+- JWT-based authentication system
+- Protected routes for sensitive pages
+- Rate limiting to prevent abuse
+
+## 🎨 Design Philosophy
+
+This website embraces the aesthetic of the 90s internet with:
+- Retro GIFs and animations
+- Nostalgic color schemes
+- Playful interactions
+- Heart-shaped cursors
+- Error pages with personality
+
+## 📊 Performance & Usage
+
+The project has been optimized for both performance and cost:
+
+### Before (Old Stack)
+- Java + Spring + JSP
+- Traditional server setup
+
+### After (Current Stack)
+- Java + Spring + React + Vite
+- MySQL Serverless
+- Deployed on Vercel (frontend) + Railway (backend)
+
+<img width="1826" height="512" alt="usage-by-project" src="https://github.com/user-attachments/assets/1b5b41a7-fe09-4f29-bc93-57d55fd51e61" />
+
+## 🌐 Deployment
+
+- **Frontend**: Deployed on Vercel for fast global CDN
+- **Backend**: Deployed on Railway for reliable serverless hosting
+- **Database**: MySQL serverless for cost efficiency
+
+## 🔧 Development
+
+### Project Structure
+```
+website-react/
+├── frontend/          # React + Vite application
+│   ├── src/
+│   │   ├── components/    # Reusable React components
+│   │   ├── pages/         # Page components
+│   │   ├── services/      # API services
+│   │   └── assets/        # CSS, images, etc.
+│   └── public/            # Static assets
+└── backend/           # Spring Boot application
+    ├── src/main/java/
+    │   └── com/saribeiro/website_react/
+    │       ├── config/        # Security and configuration
+    │       ├── user/          # User management
+    │       ├── wishlist/      # Wishlist functionality
+    │       └── admin/         # Admin features
+    └── src/main/resources/    # Application properties and migrations
+```
+
+</details>
+
 
 ## 📞 Contact
 
@@ -183,6 +435,7 @@ This project wouldn't be possible without these amazing resources and inspiratio
 - **[mf2fm](https://www.mf2fm.com/rv/)** - Cursor and text effects
 - **[Wikihow](https://www.wikihow.com/Make-a-Website-Like-the-90s)** - General 90s web ideas
 - **[1j01](https://github.com/1j01/98?tab=readme-ov-file)** - Great Windows 95 ideas
+- **[cursor](https://cursor.com/?from=home)**, it ONLY helped me with documentation, 'cause I'm lazy.
 
 ## 📄 License
 
@@ -192,6 +445,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 *Made with 💖, lots of patience, and a sprinkle of 90s nostalgia*
 
-**Last Updated**: 2024  
-**Version**: '24 edition  
+**Last Updated**: 2025  
 **Status**: Under construction (always!) 🚧
